@@ -1,0 +1,41 @@
+@charset "utf-8";
+body {
+	background:#D9D6E4;
+	color: #000000;
+	margin: 0px;
+}
+p{
+	font-size: 14px;
+	font-family:微软雅黑;
+}
+#titlename h1{
+	align:center;
+	background-color:#D3C5E4;
+	padding: 0px 0px 4px 0px;
+	width: 100%;
+}
+.daohang{
+	width:15%;
+	background:#CCC;
+	}
+#nav h3{
+	margin-left: 10px;
+	margin-top: 80px;
+	margin-bottom: 0px;
+}
+.content{
+	background-color:#D0C2E2;
+	margin: 0 auto;	
+	width: 1100px;
+	 text-align:center;
+	
+}
+.copyright{
+	background-color:#D3C5E4;
+	width:100%;
+	height:50px;}
+
+.zhu{
+	width:1100px;
+	margin:0 auto;	
+	}

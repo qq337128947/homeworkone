@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+	<style>    
+*{ margin:0; padding:0; list-style:none;}    
+#box{ width:1100px;  height:200px; margin:0 auto; position:relative; overflow:hidden;}    
+#box ul{ position:absolute; left:0; top:0;}    
+#box ul li{ width:480px; height:200px; float:left;} 
+.table-tr-title{
+	height: 26px;
+	font-size: 12px;
+	text-align: center;
+}
+.table-tr-content{
+	height: 18px;
+	background:#DDD;
+	text-align: center;
+	font-size: 20px;
+}
+
+
+</style> 
+	<head>
+	<meta charset="uft-8" />
+		<title>夏日冰纷</title>
+		<link href= "css/bing_1.css" type="text/css" rel="stylesheet" />
+	</head>
+	<body>
+    <script type="text/javascript" src="js/table-row-1.0.js"></script>
+	<div id="titlename">
+		<h1 id="branding">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Summer color  </h1>
+	</div>
+    <div class="zhu">
+                        </p>
+    <div class="wid-header" align="left">
+  <table width=15% height=100% class="list" style="word-break: break-all" border="0"
+		align="left" cellpadding="0" cellspacing="1" bgcolor="#A6A5CB">
+    <tr class="table-tr-content">       
+		</tr>     
+		<tr class="table-tr-content">
+			<li><a href=""><td width="100%" height="50px" align="left" >New color</td></a>
+		</tr></li>
+		<tr class="table-tr-content">
+			<a href=""><td width="100%"height="50px"align="left" >Flavor</td></a>	
+		</tr>
+		<tr class="table-tr-content">
+			<a href=""><td width="100%"height="50px"align="left" >Shop</td></a>
+		</tr>
+		<tr class="table-tr-content">
+			<a href=""><td width="100%"height="50px"align="left" >Forum</td></a>
+		</tr>
+		<tr class="table-tr-content">
+			<a href=""><td width="100%"height="50px"align="left" >biubiubiu</td></a>
+		</tr>
+    <tr class="table-tr-content">
+			<td width="100%"height="50px"align="left" ></td>
+		</tr>	
+    <tr class="table-tr-content">
+			<td width="100%"height="50px"align="left" ></td>
+		</tr>	
+    <tr class="table-tr-content">
+			<td width="100%"height="205px" align="left" ></td>
+		</tr>		
+	</table>
+	<img src="src/abc.jpg"  alt="color"  width=85% height=480px />
+			</div>
+		<div class="content">
+			
+			水果冰棒是一道以新鲜水果为主要食材的水果甜点。<br/>
+			水果中含维生素C较多，鲜枣中含维生素C最多，其次
+			为山楂、柠檬，蜜柑、广柑、橘子、柚子、鲜龙眼中
+			含维生素C也很丰富。
+			水果为人们喜欢食用的食品，它具有增强食欲、
+			促进消化、利尿等作用。 	
+				此外还含适量维生素D、胡萝卜素等。</br>
+				用水果来制作的冰棒，不仅天然无添加，除
+				了味道好吃以外，颜色也很丰富、漂亮，打破了
+				传统奶油雪糕、冰棒的甜腻口感，
+				而且还更健康。</br>
+		</div>
+
+   
+<script>    
+window.onload=function(){    
+	var oBox=document.getElementById('box');    
+	var oUl=oBox.children[0];    
+	var aLi=oUl.children;    
+	    
+	//复制一份内容 ，制作出无缝的效果   
+	oUl.innerHTML+=oUl.innerHTML;    
+	oUl.style.width=aLi.length*aLi[0].offsetWidth+'px';    
+	    
+	setInterval(function(){   //开定时器，这样就可以自己切换，无需人工干预。 
+		var l=oUl.offsetLeft-1;  //图片切换，就是移动距离
+		if(l<=-oUl.offsetWidth/2){    
+			l=0;    
+		}    
+		oUl.style.left=l+'px';    
+	},30);    
+};    
+</script>       
+
+<div id="box">    
+		<ul>
+		<li><img src="src/csd.jpg" alt="图2" width=100%/></a></li>
+		<li><img src="src/jjc.jpg" alt="图3" width=100%/></a></li>
+		<li><img src="src/abc.jpg" alt="图4" width=100%/></a></li>
+		</ul>
+	</div> 
+    <div class="copyright">
+			版权所有2016 &copy; 
+	</div>
+	</body>
+</html>
